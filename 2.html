@@ -7,7 +7,6 @@
       body {
         margin: 0;
       }
-      a:visited{color: gray;}
       a {
         color: black;
         text-decoration: none;
@@ -25,28 +24,42 @@
         margin: 0;
         padding: 20px;
       }
-      #active{
-        color: red;
-      }
       #title {
         color: black;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #grid ol {
+        width: 100px;
+        border-right: 1px solid gray;
+        margin: 0;
+        padding: 32px;
+      }
+      #para1 {
+        padding-left: 30px;
       }
     </style>
   </head>
 
   <body>
     <h1><a href="index.html" id="title">SASA4</a></h1>
-    <ol>
-      <li><a href="1.html" >수학세미나</a></li>
-      <li><a href="2.html" id="active">선형대수학</a></li>
-      <li><a href="3.html">수학I</a></li>
-    </ol>
-    <h2>선형대수학</h2>
-    This page is for <<strong><a href="https://go.sasa.hs.kr/board/lists/200114/page/1" target="_blank" title="선형대수학 게시판">선형대수학</a></strong>>
-    <p>
-      Let's start!!!
-      <br><img src="coding.jpg" width="30%">
-    </p>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html" >수학세미나</a></li>
+        <li><a href="2.html">선형대수학</a></li>
+        <li><a href="3.html">수학I</a></li>
+      </ol>
+      <div id="para1">
+        <h2>선형대수학</h2>
+        This page is for <<strong><a href="https://go.sasa.hs.kr/board/lists/200114/page/1" target="_blank" title="선형대수학 게시판">선형대수학</a></strong>>
+        <p>
+          Let's start!!!
+          <br><img src="coding.jpg" width="30%">
+        </p>
+      </div>
+    </div>
     <p>
       <div id="disqus_thread"></div>
       <script>
